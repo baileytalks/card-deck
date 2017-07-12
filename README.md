@@ -12,15 +12,20 @@ This is a simple command line program that takes the deck (above) and then:
 
 ## Getting started
 
-`git clone path-to-your-repo`
-`command_to_install_dependencies` (e.g. `bundle`)
+`git clone git@github.com:baileytalks/card-deck.git`
 
-## Usage
+`bundle`
 
-`command_to_start` (e.g. `rackup` or `rails s`)
-Navigate to `http://localhost:4567/`
+## Usage (in the command line)
+Initialize a deck of 52 cards, as above:
+`deck = Deck.new`
 
+Shuffle the deck so that no two cards are still in sequence:
+`deck.shuffle`
+
+Deal seven cards each to four players:
+`deck.deal(7, 4)`
 
 ## Running tests
 
-`test_command` (e.g. `rspec`)
+`rspec`
