@@ -9,11 +9,11 @@ class Deck
   end
 
   def create_deck
-    ranks = ['A', *(2..10), 'J', 'Q', 'K']
-    suits = ['♥️', '♣️', '♠️', '♦']
+    ranks = ['Ace', *(2..10), 'Joker', 'Queen', 'King']
+    suits = ['♥️', '♣️', '♠️', '♦️']
 
-    ranks.each do |rank|
-      suits.each do |suit|
+    suits.each do |suit|
+      ranks.each do |rank|
         @cards << "The #{rank} of #{suit}"
       end
     end

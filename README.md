@@ -24,7 +24,7 @@ Run the program:
 
 `2.4.1 :001 > require './lib/deck'`
 
-Create a deck of 52 cards:
+Create a deck of 52 cards in perfect sequence:
 
 `deck = Deck.new`
 
