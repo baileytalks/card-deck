@@ -40,5 +40,9 @@ Deal seven cards each to four players:
 
 `rspec`
 
-## The process
-1. Create a deck of cards
+## Writing the program
+1. Create a deck of cards (an array of strings made up of rank and suit)
+2. Order the deck of cards in perfect sequence, as specified above
+3. Write a shuffle method that shuffles the cards
+4. Perfect the shuffle method so that no two cards are still in sequence
+5. Deal the number of cards specified and create players as needed to deal to
