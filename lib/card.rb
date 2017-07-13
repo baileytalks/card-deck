@@ -1,5 +1,5 @@
 # This class has the responsibility of holding the knowledge of an individual
-# card, i.e. one suit and one rank (e.g. Queen of Hearts)
+# playing card, i.e. one suit and one rank (e.g. Queen of Hearts)
 class Card
   attr_reader :rank, :suit
 
