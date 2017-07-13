@@ -13,6 +13,8 @@ class Shuffle
     check_card_sequence
   end
 
+  private
+
   def check_card_sequence
     seq = ['Ace, 2', '10, Joker', 'Joker, Queen', 'Queen, King']
 

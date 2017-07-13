@@ -40,10 +40,12 @@ Deal seven cards each to four players:
 
 `rspec`
 
-## Writing the program
-1. Create a deck of cards (an array of strings made up of rank and suit)
-2. Order the deck of cards in perfect sequence, as specified above
-3. Write a shuffle method that shuffles the cards
-4. Perfect the shuffle method so that no two cards are still in sequence
+## Writing the program 👩🏻‍💻
+1. I created a deck of cards (an array of card objects which each contain a rank and suit)
+2. The deck is originally ordered the deck of cards in perfect sequence, as specified above
+3. I wrote a shuffle method that shuffles the cards and checks that no two cards are still in sequence
+4. I created a deal method that takes the number of cards they want to deal to each player, and the number of players
+5. The deal method creates the appropriate number of users and then deals cards from the deck one by one
+6. The deck class was created last, as a controller for the above
 
-When dealing, require the user to input the number of cards they want to deal to each player, and the number of players. The deal method creates the appropriate number of users and then deals cards from the deck one by one.
+I ended up with six separate classes: Deck (a controller), CardDeck, Card, Shuffle, Deal and Player.
