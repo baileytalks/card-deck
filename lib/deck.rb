@@ -1,4 +1,5 @@
 require_relative 'card'
+require_relative 'shuffle'
 
 # This class has the responsibility of creating a deck of 52 cards in perfect
 # sequence
@@ -22,19 +23,6 @@ class Deck
   end
 
   def shuffle
-    @cards.shuffle!
-    check_card_sequence
-  end
-
-  def check_card_sequence
-    in_seq = ['Ace, 2', '10, Joker', 'Joker, Queen', 'Queen, King']
-
-    @cards.each_cons(2) do |a, b|
-      arank = a.rank.to_i
-      brank = b.rank.to_i
-      if a.suit == b.suit
-        shuffle if arank == brank - 1 || in_seq.include?("#{a.rank}, #{b.rank}")
-      end
-    end
+    @cards = Shuffle.new(@cards).modified_deck
   end
 end
