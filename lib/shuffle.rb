@@ -6,11 +6,11 @@ class Shuffle
   def initialize(cards)
     @modified_deck = cards
     shuffle
-    check_card_sequence
   end
 
   def shuffle
     @modified_deck.shuffle!
+    check_card_sequence
   end
 
   def check_card_sequence
@@ -18,9 +18,9 @@ class Shuffle
 
     @modified_deck.each_cons(2) do |a, b|
       a_num = a.rank.to_i
-      b_num = b.rank.to_i - 1
+      b_num = b.rank.to_i
       if a.suit == b.suit
-        shuffle if a_num == b_num || seq.include?("#{a.rank}, #{b.rank}")
+        shuffle if seq.include?("#{a.rank}, #{b.rank}") || a_num == b_num - 1
       end
     end
   end

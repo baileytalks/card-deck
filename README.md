@@ -45,4 +45,5 @@ Deal seven cards each to four players:
 2. Order the deck of cards in perfect sequence, as specified above
 3. Write a shuffle method that shuffles the cards
 4. Perfect the shuffle method so that no two cards are still in sequence
-5. Deal the number of cards specified and create players as needed to deal to
+
+When dealing, require the user to input the number of cards they want to deal to each player, and the number of players. The deal method creates the appropriate number of users and then deals cards from the deck one by one.
